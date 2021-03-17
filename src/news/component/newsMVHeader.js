@@ -8,9 +8,9 @@ export function MVNewsHeader(){
                 <div className = "news-title-content-large">
                     <div className = "news-date">
                         {object.date}
-                    </div>    
+                    </div>
                     <h3>{object.title}</h3>
-                    <p>{object.content}</p>        
+                    <p>{object.content}</p>
                 </div>
                 <div className = "news-img-large">
                     <picture>

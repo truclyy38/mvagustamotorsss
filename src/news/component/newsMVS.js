@@ -23,7 +23,7 @@ export function MVNewsS() {
                     </picture>
                     <div className="news-title-content-small">
                         <div class="news-header">
-                            <span class="news-date">Nov 16</span>
+                            <span class="news-date">NOV 16</span>
                             <h3 class="news-title">MV AGUSTA’S CELEBRATION SUPERVELOCE 75 ANNIVERSARIO SOLD-OUT</h3>
                         </div>
                         <p class="news-text">Within seconds of launch</p>
