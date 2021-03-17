@@ -18,6 +18,7 @@ import { FooterGe } from "./generalLayout/footer_test";
 import { ContactUsLayout } from "./contactUs/contactUsLayout";
 import MotorRideAppLayout from "./motorRideApp/motorRideApp_Layout";
 import {Container} from "./certificate/mv-certificate";
+import {NewsMV} from './news/newMV';
 import BuyYourMvLayout from "./buyYourMV/buyYourMvLayout"
 import F3_800_Body from "./motor_item_page/f3_800_body";
 import Brutale800RRBody from "./motor_item_page/brutale800rr_body";
@@ -52,6 +53,7 @@ function Index() {
           <Route path="/dragster800rrscs" component={Dragster800RR_SCS} />
           <Route path="/brutale1000rr" component={BodyBrutale1000RR} />
           <Route path="/certificate" component={Container} />
+          <Route path="/news" component = {NewsMV}/>
           <Route path="/buy-your-mv" component={BuyYourMvLayout} />
           {/* <Route
             path="/brutale1000serieoro"
