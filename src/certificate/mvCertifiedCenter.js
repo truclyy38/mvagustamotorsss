@@ -99,14 +99,14 @@ export function MVCertifiedCenter() {
                 <div className="certified-center-content">
                     <div className="certified-center-left">
                         <div className="center-left-title font1">
-                         {object.title}
+                            {object.title}
                         </div>
                         <p>
                             {object.para1}
                         </p>
                         <p>
                             {object.para2.map((para2_ct) => (
-                               <>{para2_ct}   <br></br> </> 
+                                <> {para2_ct}   <br></br></>
                             ))}
                         </p>
                     </div>
