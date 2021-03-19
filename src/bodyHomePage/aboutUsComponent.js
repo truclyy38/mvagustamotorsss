@@ -16,7 +16,7 @@ export function AboutUs() {
   return (
     <>
       <div className="about-us-slogan">
-        <ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={false}>
+        <ScrollAnimation animateIn="fadeInUp" duration={1} animateOnce={true}>
           <div className="about-us-video">
             {/* <video width="100%" height="100%" >
                 <source src="Background.mp4" type="video/mp4"></source>

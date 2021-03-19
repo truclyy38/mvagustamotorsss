@@ -178,7 +178,7 @@ export default function SlideImgHomepage() {
                         type="image/png"
                       ></source>
                       <img
-                        alt=""
+                        alt="resized image"
                         src={"./img/homepage/large/" + bgSlide.imgSrc.large}
                       />
                     </picture>

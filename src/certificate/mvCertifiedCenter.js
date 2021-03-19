@@ -23,20 +23,16 @@ export function MVCertifiedCenter() {
             setObject(data[0]);
         }
     }
-  
 
     function animationChange1() {
 
         if (object == data[0]) { setObject(data[1]); }
 
-        y = document.getElementById("change1");
-        y.addEventListener("click", animationChange1); 
-        y2 = document.getElementById("change2");
-        y2.addEventListener("click", animationChange2); 
+        document.getElementById("change1").addEventListener("click", animationChange1);
+        document.getElementById("change2").addEventListener("click", animationChange2);
         width1 = 0;
         document.getElementById("certified-button-border-change1").style.width = 0 + "%";
         clearInterval(id1);
-       
         document.getElementsByClassName("certified-button-label")[0].classList.add("certified-button-label-change");
         document.getElementsByClassName("certified-button-label")[1].classList.remove("certified-button-label-change");
         document.getElementById("certified-button-border-change1").classList.add("certified-button-border-changed");
@@ -71,7 +67,6 @@ export function MVCertifiedCenter() {
         document.getElementById("certified-button-border-change2").classList.add("certified-button-border-changed");
         document.getElementById("certified-button-border-change1").classList.remove("certified-button-border-changed");
         document.getElementById("certified-button-border-change1").classList.add("certified-button-border-full");
-       
         id2 = setInterval(frame, 10 - 0);
         function frame() {
             if (width2 >= 100) {
