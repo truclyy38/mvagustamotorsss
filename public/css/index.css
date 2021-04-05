@@ -83,7 +83,7 @@ a {
 }
 @keyframes transformTxt {
   0% {
-    top: 95px;
+    top: -95px;
     opacity: 0.5;
   }
   100% {

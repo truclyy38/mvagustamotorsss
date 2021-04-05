@@ -25,8 +25,8 @@ const spAlpine_infor = {
     contentHeaderContent:
       "A luxury, high-performing limited edition Superveloce in Alpine's signature blue livery.",
     reveredContent: false,
-    heightContentTop: "15.5%",
-    titleSize: "auto 23%",
+    heightContentTop: "20%",
+    titleSize: "auto 19%",
   },
   properties: {
     cylinders: 3,
