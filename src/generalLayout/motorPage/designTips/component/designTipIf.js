@@ -55,7 +55,10 @@ function DesignTipIfMobile({ DTInfs }) {
 function DesignTipIfDesk({ DTInfs }) {
   const child = { width: `75em`, height: `100%` };
   return (
-    <HorizontalScroll reverseScroll={true} className="ds-desk">
+    <HorizontalScroll
+      reverseScroll={true}
+      className="ds-desk"
+    >
       {DTInfs.map((DTInf) => (
         <div className="dt-lt-container" style={child}>
           <div className="design-gallery">
