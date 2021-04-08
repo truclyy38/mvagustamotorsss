@@ -10,7 +10,8 @@ function closeMotorList() {
     "0vw";
   document.getElementsByClassName("motorList-container-left")[0].style.opacity =
     "0";
-  document.getElementById("body").style.overflow = "scroll";
+  document.getElementById("body").style.overflow = "hidden";
+  document.getElementById("body").style.overflowY = "auto";
   // $('.motorList-container-left').css("opacity", "0");
 }
 function hoverBlurOthers(index) {

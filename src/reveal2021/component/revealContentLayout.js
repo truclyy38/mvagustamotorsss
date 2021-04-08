@@ -1,4 +1,3 @@
-import "./rvEvent.css";
 export const RevealContentLayout = ()=>{
     return (
       <>

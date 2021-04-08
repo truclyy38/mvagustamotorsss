@@ -25,6 +25,8 @@ import F3_800_Body from "./motor_item_page/f3_800_body";
 import Brutale800RRBody from "./motor_item_page/brutale800rr_body";
 import Brutale800RR_SCS_Body from "./motor_item_page/brutale800rr_scs_body";
 import Reveal2021Page from "./reveal2021/reveal2021_body";
+import { HistoryPage } from "./generalLayout/slideScrollHorizontal/historyPage";
+
 function Index() {
   window.addEventListener("scroll", () => {
     ScrollNavFunction();
@@ -59,6 +61,7 @@ function Index() {
           <Route path="/news" component = {NewsMV}/>
           <Route path="/buy-your-mv" component={BuyYourMvLayout} />
           <Route path="/reveal-2021" component={Reveal2021Page} />
+          <Route path="/history" component={HistoryPage} />
           {/* <Route
             path="/brutale1000serieoro"
             component={BodyBrutale1000SerieOro}

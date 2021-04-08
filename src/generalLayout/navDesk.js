@@ -515,8 +515,8 @@ const NavCompany = () => {
         <div className="company-container">
           <h3>MV WORLD</h3>
           <a href="monaco-design-studio">Monaco Design Studio</a>
-          <a href="news">News</a>
           <a href="reveal-2021">Reveal Events</a>
+          <a href="news">News</a>
         </div>
         <div className="company-container">
           <h3>FOLLOW US</h3>
