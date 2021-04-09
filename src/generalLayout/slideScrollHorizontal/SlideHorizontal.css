@@ -7,6 +7,9 @@
   z-index: 10;
   background-color: #1f1f1f;
 }
+.slick__layout .slick-list {
+  width: 100% !important;
+}
 .slick__slides_ {
   width: 100%;
   height: 100%;
@@ -53,33 +56,101 @@
   max-height: 464px;
 }
 .splide__slide__title {
-    font-family: 'bebas neue';
-    font-size: 83px;
-    line-height: .85;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    direction: ltr;
-    margin-bottom: 30px;
+  font-family: "bebas neue";
+  font-size: 83px;
+  line-height: 0.85;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  direction: ltr;
+  margin-bottom: 30px;
 }
 .splide__slide__story p {
-    margin-bottom: 20px;
-    max-width: 450px;
-    direction: ltr;
-    font-size: 18.5px;
+  margin-bottom: 20px;
+  max-width: 450px;
+  direction: ltr;
+  font-size: 18.5px;
 }
 .splide__slide__story::-webkit-scrollbar {
-    width: 10px;
-    border-radius: 5px;
-    overflow: hidden;
+  width: 10px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .splide__slide__story::-webkit-scrollbar-thumb {
-    background-color: rgba(115, 115, 115, 1);
-    border: 2px solid rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
-    overflow: hidden;
+  background-color: rgba(115, 115, 115, 1);
+  border: 2px solid rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  overflow: hidden;
 }
 .splide__slide__story::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 5px;
-    overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* -------------------thumb----------------- */
+.slick__thumbs_ {
+  width: 94vw;
+  max-width: 1260px;
+  height: 160px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0s ease !important;
+}
+.slick__thumbs_ * {
+  transition: 0s ease !important;
+  overflow: visible;
+}
+.sl_thumb_ {
+  text-align: center;
+  color: white;
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+.thumb-year::after {
+  content: "";
+  height: 6px;
+  width: 6px !important;
+  opacity: 0.5;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.slick__layout .slick-slide.slick-current .thumb-year::after{
+  opacity: 1;
+  width: 12px !important;
+  height: 12px;
+}
+.slick__layout .slick-slide .thumb-year::before{
+  content: attr(data-year);
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: "Questrial", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  display: none;
+}
+.slick__layout .slick-slide:first-child .thumb-year::before,
+.slick__layout .slick-slide:last-child .thumb-year::before {
+  content: attr(data-year);
+  position: absolute;
+  top: auto;
+  bottom: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+.slick__layout .slick-slide.slick-current .thumb-year::before{
+  display: block;
 }

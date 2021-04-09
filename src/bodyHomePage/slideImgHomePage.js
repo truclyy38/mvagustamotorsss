@@ -6,7 +6,7 @@ export default function SlideImgHomepage() {
   const bgSlides = [
     {
       titleSrc: "",
-      link: "",
+      link: "reveal-events",
       imgSrc: {
         large: "reveal-xl.png",
         medium: "reveal-m.png",

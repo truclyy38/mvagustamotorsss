@@ -60,7 +60,7 @@ function Index() {
           <Route path="/warranty" component={WarrantyLayout} />
           <Route path="/news" component = {NewsMV}/>
           <Route path="/buy-your-mv" component={BuyYourMvLayout} />
-          <Route path="/reveal-2021" component={Reveal2021Page} />
+          <Route path="/reveal-events" component={Reveal2021Page} />
           <Route path="/history" component={HistoryPage} />
           {/* <Route
             path="/brutale1000serieoro"
