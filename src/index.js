@@ -19,6 +19,7 @@ import { ContactUsLayout } from "./contactUs/contactUsLayout";
 import MotorRideAppLayout from "./motorRideApp/motorRideApp_Layout";
 import {Container} from "./certificate/mv-certificate";
 import BuyYourMvLayout from "./buyYourMV/buyYourMvLayout"
+import BespokeLayout from './bespoke/bespokeLayout'
 function Index() {
   window.addEventListener("scroll", () => {
     ScrollNavFunction();
@@ -50,6 +51,7 @@ function Index() {
           <Route path="/brutale1000rr" component={BodyBrutale1000RR} />
           <Route path="/certificate" component={Container} />
           <Route path="/buy-your-mv" component={BuyYourMvLayout} />
+          <Route path="/monaco-design-studio" component={BespokeLayout} />
           {/* <Route
             path="/brutale1000serieoro"
             component={BodyBrutale1000SerieOro}

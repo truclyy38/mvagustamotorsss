@@ -142,6 +142,7 @@ export function Progress({ signal }) {
                     {progress.head}
                 </p>
             </div>
+            
         </>
     );
 }
