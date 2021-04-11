@@ -1,25 +1,32 @@
-.wr-header-content{
+.wr-hd-contain{
     position: relative;
-    top: 0;
+    top: 0px;
+    left:0;
+    width: 100vw;
+    height: 120vh;
+}
+.wr-header-content{
+   position: absolute;
     background-image: url("../img/warranty/banner-bg-l.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 140vh;
+    background-size:cover;
+    object-fit:fill;
+    height: 100%;
     text-align: center;
     justify-content: center;
-    display: flex;
-    width: 100vw;
+    display:flex;
+    width: 100%;
 }
 
 .wr-header-title{
-   padding-top: 140px;
+   padding-top: 12%;
     font-family: 'Anton';
     color: white;
-    letter-spacing: -1px;
+    letter-spacing: 0.8%;
     text-transform: uppercase;
-    font-weight: 400;
-    font-size: 5.5em;
-    line-height: 1;
+    font-weight: 550;
+    font-size: 500%;
+    line-height: 0.95;
 }
 /* ........................................................... */
 .wr-body-content{
@@ -38,12 +45,12 @@
     text-align: left;
 }
 .wr-content{
-    width: 50%;
-    height: 330px;
-    margin-top: 150px;
-    padding:  0px 40px;
+    width: 33.33%;
+    height: 70%;
+    margin-top: 60px;
+    padding:  0% 5%;
     align-items: center;
-    border-right: 1px solid #131415;
+    border-right: 1px solid #b3adad;
     
 }
 .wr-content:last-child{
@@ -61,51 +68,68 @@
 .wr-content p{
     font-family: "Average Sans";
     font-size: 20px;
-    /* width: 90%; */
     letter-spacing: 0.1px;
     line-height: 1.1;
 }
+@media all and (max-width: 1200px){
+    .wr-header-content{
+        height: 85%;
+    }
+}
 
 @media all and (max-width: 986px){
- .wr-header-content{
-     background-image: url("../img/warranty/banner-bg-m.jpg");
-     height: 250vh;
-     font-size: 0.8rem;
- }
+    .wr-hd-contain{
+        height: 240vh;
+    }
+    .wr-header-content{
+        background-image: url("../img/warranty/banner-bg-m.jpg");
+        height: 85%;
+        font-size: 0.9em;
+    }
  /*  */
  .wr-body-content{
+    max-height: 200vh;
+    height:150vh;
      width: 100%;
-     height: 150vh;
     display: flex;
     align-items: center;
     justify-content: center;
+     margin-top: -12%;
+
 }
  .wr-content-contain{
-     width: 70%;
+    width: 70%;
     flex-direction: column;
     justify-content: flex-start;
 }
 .wr-content{
     width: 100%;
-    height: 110px;
-    margin-top: 120px;
-    padding: 0;
+    height: 250%;
     align-items: center;
     border: none;
-    
 }
- /* .wr-content h2{
-     margin-top: none;
-     padding: none;
-    margin-bottom: 20px;
-} */
+
 }
 @media all and (max-width: 700px){
+    .wr-hd-contain{
+        height: 150vh;
+    }
     .wr-header-content{
-        font-size: 0.7em;
-        background-size: 70em;
-        background-position: unset;
-        height: 180vh;
+        /* background-position-x: -100; */
+        height: 100%;
+         font-size: 0.7em; 
+        background-size: cover; 
+    }
+    .wr-content-contain{
+        width: 100%;
+    }
+    .wr-header-title{
+        padding-top: 20%;
+     }
+    .wr-body-content{
+        max-height: 170vh;
+        height:130vh;  
+        margin-top: 10%;  
     }
     /*  */
 }
