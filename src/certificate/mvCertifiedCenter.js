@@ -35,6 +35,7 @@ export function MVCertifiedCenter() {
             width1 = 0;
             id1 = setInterval(frame, 2 - 0);
 
+
             function frame() {
                 if (width1 > 100) {
                     clearInterval(id1);
@@ -44,8 +45,27 @@ export function MVCertifiedCenter() {
                     width1 += 0.1;
                     document.getElementById("certified-button-border-change1").style.width = width1 + "%";
                 }
-            }
-        }
+        document.getElementById("change1").addEventListener("click", animationChange1);
+        document.getElementById("change2").addEventListener("click", animationChange2);
+        width1 = 0;
+        document.getElementById("certified-button-border-change1").style.width = 0 + "%";
+        clearInterval(id1);
+        document.getElementsByClassName("certified-button-label")[0].classList.add("certified-button-label-change");
+        document.getElementsByClassName("certified-button-label")[1].classList.remove("certified-button-label-change");
+        document.getElementById("certified-button-border-change1").classList.add("certified-button-border-changed");
+        document.getElementById("certified-button-border-change2").classList.remove("certified-button-border-changed");
+        id1 = setInterval(frame, 50 - 0);
+//         function frame() {
+//             if (width1 >= 100) {
+//                 clearInterval(id1);
+
+//                 animationChange2();
+//             }
+//             else {
+//                 width1++;
+//                 document.getElementById("certified-button-border-change1").style.width = width1 + "%";
+//             }
+//         }
     }
     function animationChange2() {
         clearInterval(id1);
@@ -58,6 +78,7 @@ export function MVCertifiedCenter() {
         document.getElementById("certified-button-border-change2").classList.add("certified-button-border-changed");
         document.getElementById("certified-button-border-change1").classList.remove("certified-button-border-changed");
         document.getElementById("certified-button-border-change1").classList.add("certified-button-border-full");
+
         document.getElementsByClassName("certified-button-label")[0].classList.add("certified-button-label-change");
         let i = 0;
         width2 = 0;
@@ -74,6 +95,15 @@ export function MVCertifiedCenter() {
                     width2 += 0.1;
                     document.getElementById("certified-button-border-change2").style.width = width2 + "%";
                 }
+
+//         id2 = setInterval(frame, 10 - 0);
+//         function frame() {
+//             if (width2 >= 100) {
+//                 clearInterval(id2);
+//             } else {
+//                 width2 += 0.1;
+//                 document.getElementById("certified-button-border-change2").style.width = width2 + "%";
+
             }
         }
 

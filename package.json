@@ -1,18 +1,25 @@
 {
   "name": "mvagusta2",
-  "homepage": "http://bonbontapchoi.com/",
+  "homepage": "http://anhcongsan.club",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.2",
+
     "classnames": "^2.3.1",
+
+    "animate.css": "^4.1.1",
+
     "react": "^17.0.1",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-reveal": "^1.2.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
+    "react-scroll-horizontal": "^1.6.6",
     "react-slick": "^0.28.0",
     "react-slideshow-image": "^3.4.3",
     "react-spring": "^8.0.27",

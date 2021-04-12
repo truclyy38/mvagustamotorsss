@@ -1,0 +1,233 @@
+.rv-ct-layout {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rv-ct-layout span {
+  width: 95%;
+  max-width: 700px;
+  text-align: center;
+  font-family: "Questrial", Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+.upcoming-reveal-lt {
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.upcoming-reveal-lt img {
+  border-radius: 4px;
+}
+.up-re-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+.up-re-content h3 {
+  color: white;
+  font-family: serif;
+  font-size: 3rem;
+  margin-top: 30px;
+}
+.up-re-content p {
+  color: white;
+  font-size: 5.5rem;
+  font-weight: 700;
+  font-family: serif;
+  margin-top: 200px;
+}
+.up-re-content span {
+  color: whitesmoke;
+  font-size: 21px;
+}
+.rv-ct-layout .xc {
+  display: none;
+}
+
+/* form ---------------------------------- */
+.su-ts-lout {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.su-ts-lout h3 {
+  margin: 90px 0px 10px 2px;
+  font-family: "bebas neue";
+  font-size: 54px;
+  align-self: start;
+}
+.su-ts-lout form {
+  max-width: 950px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+  border-radius: 4px;
+}
+.su-ts-lout .form-group {
+  margin: 5px 0;
+  width: 100%;
+  position: relative;
+}
+.su-ts-lout input[type="text"],
+.su-ts-lout select {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid rgba(19, 20, 21, 0.3);
+  padding-left: 25px;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.su-ts-lout input[type="checkbox"] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 28px;
+  height: 28px;
+  margin-left: 1px;
+  border-radius: 4px;
+  border: 1px solid rgba(19, 20, 21, 0.3);
+}
+.fg-cb {
+  margin-top: 15px !important;
+}
+.form-group > span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.form-group span a {
+  border-bottom: 1px solid black;
+}
+.su-ts-lout .form-group.submit-re-bt {
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+.su-ts-lout .form-group.submit-re-bt button {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: "Anton";
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+  overflow: hidden;
+  transition: 0.25s ease;
+}
+.su-ts-lout .form-group.submit-re-bt button:hover {
+  background-color: transparent;
+}
+.su-ts-lout .form-group.submit-re-bt button span {
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
+  display: block;
+  position: relative;
+  font-family: 'anton';
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+.su-ts-lout .form-group.submit-re-bt button:not(:hover) span {
+  animation: transformTxt 0.25s ease;
+}
+.su-ts-lout .form-group.submit-re-bt button:hover span {
+  animation: transformTxtReverse 0.35s ease;
+  color: black;
+}
+@media screen and (max-width: 1500px) {
+  .up-re-content p {
+    margin-top: 120px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .up-re-content p {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .up-re-content p {
+    margin-top: 175px;
+  }
+  .upcoming-reveal-lt img{
+      min-height: 850px;
+  }
+}
+@media screen and (max-width: 785px) {
+  .rv-ct-layout span {
+    font-size: 22px;
+  }
+  .up-re-content h3 {
+    font-size: 2.5rem;
+  }
+  .up-re-content p {
+    margin-top: 140px;
+    font-size: 5rem;
+  }
+  .rv-ct-layout .xc {
+    display: block;
+  }
+}
+@media screen and (max-width: 675px) {
+  .up-re-content h3 {
+    font-size: 2.5rem;
+  }
+  .up-re-content p {
+    margin-top: 125px;
+    font-size: 4.25rem;
+  }
+  .su-ts-lout form{
+      padding: 0 6%;
+  }
+  .su-ts-lout input[type="checkbox"] {
+      width: 25px;
+      height: 25px;
+  }
+}
+@media screen and (max-width: 565px) {
+  .up-re-content h3 {
+    font-size: 2rem;
+  }
+  .up-re-content p {
+    margin-top: 110px;
+    font-size: 3.5rem;
+  }
+  .up-re-content span {
+    font-size: 20px;
+  }
+  .su-ts-lout form{
+      padding: 0 3%;
+  }
+  .su-ts-lout .form-group.submit-re-bt button span {
+    padding: 12px 0;
+    font-size: 22px;
+}
+}

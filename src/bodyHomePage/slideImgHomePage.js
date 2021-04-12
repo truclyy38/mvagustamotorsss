@@ -6,6 +6,7 @@ export default function SlideImgHomepage() {
   const bgSlides = [
     {
       titleSrc: "",
+      link: "reveal-events",
       imgSrc: {
         large: "reveal-xl.png",
         medium: "reveal-m.png",
@@ -18,6 +19,7 @@ export default function SlideImgHomepage() {
     },
     {
       titleSrc: "dragster-2021-logo.svg",
+      link: "dragster800rrscs",
       imgSrc: {
         large: "dragster-2021-xl.png",
         medium: "dragster-2021-m.png",
@@ -30,6 +32,7 @@ export default function SlideImgHomepage() {
     },
     {
       titleSrc: "brutale-2021-logo.svg",
+      link: "brutale-800-rr-scs",
       imgSrc: {
         large: "brutale-2021-xl.png",
         medium: "brutale-2021-m.png",
@@ -42,6 +45,7 @@ export default function SlideImgHomepage() {
     },
     {
       titleSrc: "sv-alpine-logo.svg",
+      link: "superveloce-alpine",
       imgSrc: {
         large: "superveloce-alpine-xl.png",
         medium: "superveloce-alpine-m.png",
@@ -54,6 +58,7 @@ export default function SlideImgHomepage() {
     },
     {
       titleSrc: "superveloce-75-anniversario.svg",
+      link: "",
       imgSrc: {
         large: "superveloce-75-xl.png",
         medium: "superveloce-75-m.png",
@@ -147,7 +152,7 @@ export default function SlideImgHomepage() {
                             id={"bt-tt-" + index}
                             className="bt-tt-sl"
                           >
-                            <a style={{ color: bgSlide.color }} href>
+                            <a style={{ color: bgSlide.color }} href={bgSlide.link}>
                               LEARN MORE
                             </a>
                           </button>
@@ -178,7 +183,7 @@ export default function SlideImgHomepage() {
                         type="image/png"
                       ></source>
                       <img
-                        alt=""
+                        alt="resized image"
                         src={"./img/homepage/large/" + bgSlide.imgSrc.large}
                       />
                     </picture>
