@@ -5,6 +5,7 @@
 .img-slide{
     display: none;
     animation: fadeIn ease-out 0.5s;
+    width: 100%;
 }
 
 .active_image{
@@ -12,7 +13,7 @@
 }
 
 .img-index{
-    width: 120px;
+    max-width: 120px;
     height: auto;
     margin: 30px;
 }
@@ -263,6 +264,7 @@
     border: 1px solid black;
     border-radius: 5px;
     background-color: black;
+    margin-bottom: 30px;
 }
 
 .button-submit{
@@ -328,7 +330,12 @@ label>a:active{
   }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1159px) {
+    .img-index{
+        width: 12%;
+        margin-left: 0px;
+    }
+    
     .galleryStep-content-conPar1{
         font-size: 40px;
     }
@@ -336,15 +343,51 @@ label>a:active{
     form{
         margin: 30px 100px;
     }
+
+    .area-galleryStep{
+        margin-bottom: 100px;
+    }
+
+    .team_wrap{
+        margin-top: 0px;
+    }
+
+    .team_name{
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 991px){
-
     .nav-pc-homepage{
     height: calc(100vw*1.33) !important;
     }
+
+    .img-index{
+        margin: 10px 10px 5px 0;
+    }
+
+    .team_name{
+        font-size: 35px;
+    }
+
+    form{
+        width: 500px;
+    }
+
+    .inputText, #button-submit{
+        width: 100%;
+    }
+
+    .area-input-cb{
+        margin-left: 0px;
+    }
 }
-    
+
+@media screen and (max-width: 850px) {
+    .team_name{
+        font-size: 30px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .galleryStep-content-conPar2{
@@ -357,8 +400,12 @@ label>a:active{
 
     .team_list{
         flex-direction: column;
-        width: 70%;
+        width: 80%;
         margin: 0 auto;
+    }
+
+    .team_descr{
+        max-width: none;
     }
 
     .team_item{
@@ -366,8 +413,8 @@ label>a:active{
     }
   
     form{
-        width: 500px;
-        margin: 30px 70px;
+        width: 90%;
+        margin: 30px auto;
     }
 
     .inputText{
@@ -380,18 +427,48 @@ label>a:active{
 
     #button-submit{
         width: 100%;
+        height: 40px;
     }
 
     .img-index {
-        width: 100px;
-        height: auto;
         margin: 10px;
     }
+
+    .area-feedback{
+        width: 90%;
+    }
+
 }
 
 @media screen and ( max-width: 600px) {
+    .slideIndex{
+        flex-direction: column;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
     .active_content {
         flex-direction: column;
+    }
+
+    .galleryStep-content-con{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .title-header>h1 strong {
+        font-size: 60px;
+    }
+
+    .galleryStep-content-conPar1{
+        margin: 0px auto;
+    }
+
+    .galleryStep-content-conPar2{
+        margin: 0 auto;
+        line-height: 20px;
     }
 
     .galleryStep-content-con{
@@ -410,23 +487,32 @@ label>a:active{
         width: 100%;
     }
 
-    .img-index{
-        margin: 10px 10px 10px 0
+    .input-cb-pri~label, .input-cb-pro~label {
+        font-size: 16px;
+        margin-left: 5px;
     }
 }
 
-@media screen and ( max-width: 400px){
-    .slideIndex{
-        flex-direction: column;
-        left: 800px;
-        top: 0;
-        bottom: 0;
-        margin-top: auto;
-        margin-bottom: auto;
+@media screen and ( max-width: 414px){
+    .inputText:focus~label, .inputText:valid~label{
+        font-size: 8px;
+        top:8%
     }
 
+    .inputText~label{
+        font-size: 12px;
+        top: 32%;
+    }
     .img-index {
-        width: 80px;
+        margin: 0px 0px 7px 5px;
+    }
+
+    .galleryStep-content-con{
+        margin-bottom: 20px;
+    }
+
+    .area-galleryStep{
+        margin-bottom: 40px;
     }
 
     .team_name{
@@ -436,4 +522,45 @@ label>a:active{
     .blockQUOTE_text{
         font-size: 16px;
     }
+
+    .title-header>h1 strong{
+        font-size: 40px;
+        line-height: 20px;
+    }
+
+    .blockQUOTE_wrap{
+        margin: 50px auto;
+        width: 80%;
+    }
+
+    .blockQUOTE_text{
+        font-size: 14px;
+    }
+
+    .team_title{
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+
+    .title-input{
+        font-size: 30px;
+    }
+
+    .inputText{
+        padding: 10px 28px;
+    }
+
+    .input-cb-pri~label, .input-cb-pro~label{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .button-submit{
+        font-size: 12px;
+    }
+
+    .team_avatar, .team_name{
+        margin-bottom: 10px;
+    }
+
 }
