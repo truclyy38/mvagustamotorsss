@@ -3,7 +3,7 @@ import Nav from '../generalLayout/nav';
 import NavDesktop from '../generalLayout/navDesk';
 import SlideImage from './Component/bespokeSlideImage'
 import TheTeam from './Component/bespokeTeam'
-import MotorItem from '../generalLayout/motorItems'
+import MotorItem from '../generalLayout/motorPage/motorItems/motorItems'
 import Feedback from './Component/bespokeFeedback'
 import GalleryStep from './Component/bespokeGalleryStep'
 
