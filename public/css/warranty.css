@@ -34,6 +34,7 @@
     top:0;
     width: 100vw;
     height:90vh;
+    max-height: 520px;
     background-color: #f1f1f1;
 }
 .wr-content-contain{
@@ -50,8 +51,12 @@
     margin-top: 60px;
     padding:  0% 5%;
     align-items: center;
+ main
     border-right: 1px solid #b3adad;
     
+
+    border-right: 1px solid #131415;
+ main
 }
 .wr-content:last-child{
     border:none ;

@@ -25,8 +25,8 @@ const spAlpine_infor = {
     contentHeaderContent:
       "A luxury, high-performing limited edition Superveloce in Alpine's signature blue livery.",
     reveredContent: false,
-    heightContentTop: "15.5%",
-    titleSize: "auto 23%",
+    heightContentTop: "20%",
+    titleSize: "auto 19%",
   },
   properties: {
     cylinders: 3,
@@ -48,6 +48,29 @@ const spAlpine_infor = {
     p:
       "When two motorsport giants such as Alpine and MV Agusta come together, the result can only be stunning in terms of design and technology. The Superveloce Alpine represents the quintessence of the two brands’ souls and character in an incredibly beautiful and richly detailed limited edition.",
     src: "superveloceAlpine/design.jpg",
+    inf: [
+      {
+        title: "Rally to the essence of style",
+        content:
+          "The blue livery of the Superveloce Alpine exactly matches that of the current A110. The raised “A” logos on the fairings are also reminiscent of the original A110 detailing, as well as the black Alcantara seats with blue stitching and the CNC-machined black rims. To mark the collaboration between two national heritage brands, the French and Italian flags are proudly displayed on either side of the front fender.",
+        mediumImg: "./img/superveloceAlpine/superveloce-alpine-popup-1.png",
+        largeImg: "./img/superveloceAlpine/superveloce-alpine-popup-xl-1.png",
+      },
+      {
+        title: "DETAILS ARE EVERYTHING",
+        content:
+          "...like the leather strap on the fuel tank, conferring the Superveloce Alpine that distinct retro touch, yet modern and forward looking in its conception. The same principle has been applied to the whole bike, with even the most minute detail being carefully thought out. For this project, only the best and most advanced materials have been employed, the finest leathers, the most exclusive fabrics and the richest instrument configuration. The magnificent result is the sum of a multitude of individual gems, each unique and the best in its class.",
+        mediumImg: "./img/superveloceAlpine/superveloce-alpine-popup-2.png",
+        largeImg: "./img/superveloceAlpine/superveloce-alpine-popup-xl-2.png",
+      },
+      {
+        title: "UNIQUE AND EXCLUSIVE",
+        content:
+          "MV Agusta created a dedicated kit for this very special, 110-units limited edition Superveloce: Arrow three-exit exhaust system (only for track use); control unit with a dedicated map; CNC fuel cap with leather strap and Alpine logo; rear seat cover; customised bike cover, certificate of origin.",
+        mediumImg: "./img/superveloceAlpine/superveloce-alpine-popup-3.png",
+        largeImg: "./img/superveloceAlpine/superveloce-alpine-popup-xl-3.png",
+      },
+    ],
   },
   engineInf: {
     title: {

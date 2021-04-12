@@ -65,9 +65,19 @@ export default function MotorPageHeader({ headerData }) {
             top: 0,
             backgroundPosition: "left",
             backgroundSize: "cover",
+            transform: headerData.transformMedia,
           }}
         >
           <picture style={{ height: "100%" }}>
+            <source
+              media="(max-width: 565px)"
+              srcset={
+                headerData.hasOwnProperty("bgHeaderParallax_Mobile")
+                  ? `./img/${headerData.bgHeaderParallax_Mobile}`
+                  : null
+              }
+              // srcSet = {null}
+            ></source>
             <source
               media="(max-width: 991px)"
               srcset={`./img/${headerData.bgHeaderParallax_Small}`}
@@ -76,6 +86,13 @@ export default function MotorPageHeader({ headerData }) {
               src={`./img/${headerData.bgHeaderParallax_Large}`}
               alt=""
               height="100%"
+              style={{
+                position: headerData.position,
+                right: headerData.posRight,
+                width: headerData.width,
+                bottom: headerData.posBottom,
+                height: headerData.height,
+              }}
             ></img>
           </picture>
         </div>

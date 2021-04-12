@@ -64,6 +64,22 @@ const brutale1000rr_infor = {
     p:
       "The design draws on tight lines and volumes that are perfectly integrated between the front and rear end. This exquisite balance, a distinctive trait of the four-cylinder Brutale since the first iconic model that marked the relaunch of the Italian brand along with the F4, is now back with the new 1000 RR.",
     src: "brutale1000rr/design.png",
+    inf: [
+      {
+        title: "Details",
+        content:
+          "Attention to detail is revealed by the aerodynamic wings positioned beside the radiators to improve downforce and add load to the front end, limiting lift at high speed. The effect can be clearly felt over 200km/h.",
+        mediumImg: "./img/brutale1000rr/brutale-1000-rr-popup-1.png",
+        largeImg: "./img/brutale1000rr/brutale-1000-rr-popup-xl-1.png",
+      },
+      {
+        title: "Explosive 208 hp, yet manageable",
+        content:
+          "A top speed of over 300 km/h and record-breaking acceleration. The new Brutale 1000 RR was designed to get the best out of chassis, engine and electronics, with minimum effort from the rider, taking into account the exceptional performance levels of this hyper-naked.",
+        mediumImg: "./img/brutale1000rr/brutale-1000-rr-popup-2.png",
+        largeImg: "./img/brutale1000rr/brutale-1000-rr-popup-xl-2.png",
+      },
+    ],
   },
   engineInf: {
     title: {

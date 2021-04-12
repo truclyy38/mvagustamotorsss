@@ -25,6 +25,12 @@ const f3_800_infor = {
     titleSize: "auto 16%",
     reveredContent: true,
     heightContentTop: "22%",
+    position: "absolute",
+    posRight: "0",
+    transformMedia: "none",
+    // width: "100%",
+    posBottom: "0",
+    // height: "auto"
   },
   Model3ds: [
     {
@@ -55,6 +61,22 @@ const f3_800_infor = {
     p:
       "Every detail of the F3 800 is designed with a sole objective: making it faster. Form follows function, say the masters of design, and all with the unmistakable style of MV Agusta.",
     src: "f3-800/design.jpg",
+    inf: [
+      {
+        title: "A SUPERFAST WORK OF ART",
+        content:
+          "The distinctive three-exit exhaust, the aggressive-looking headlight unit and the single-sided swingarm, so beautiful it looks like a sculpture: just as with its 675, every detail of the F3 800 tells the story of another work of art crafted by MV Agusta.",
+        mediumImg: "./img/f3-800/f3-800-popup-1.png",
+        largeImg: "./img/f3-800/f3-800-popup-xl-1.png",
+      },
+      {
+        title: "TRACTION WITH MORE POWER",
+        content:
+          "Lightweight, agile, essential. The F3 800 defines a new paradigm in motorcycling. The road opens up as the speed increases. The bike almost becomes immaterial and creates a direct connection between rider and tarmac.",
+        mediumImg: "./img/f3-800/f3-800-popup-2.png",
+        largeImg: "./img/f3-800/f3-800-popup-xl-2.png",
+      },
+    ],
   },
   engineInf: {
     title: {

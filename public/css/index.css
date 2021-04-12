@@ -83,7 +83,7 @@ a {
 }
 @keyframes transformTxt {
   0% {
-    top: 95px;
+    top: -95px;
     opacity: 0.5;
   }
   100% {
@@ -1100,7 +1100,7 @@ a {
 }
 @media screen and (max-width: 675px){
   .email-subscribe, .policy{
-    height: 40px;
+    height: 20px;
     font-size: 12px;
   }
 }

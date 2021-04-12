@@ -13,6 +13,7 @@ export default function Motor3d({ models }) {
       newImg.setAttribute("width", "100%");
       newImg.setAttribute("class", className);
       newImg.setAttribute("id", idName + i);
+      newImg.setAttribute("alt", "resized image");
       var drContainer = document.getElementById(location);
       drContainer.appendChild(newImg);
     }

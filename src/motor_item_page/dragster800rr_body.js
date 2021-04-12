@@ -64,6 +64,22 @@ const dragster800rr_infor = {
     p:
       "With the looks of a street fighter, reflecting the powerful three-piston heart, the Dragster RR is a raw blend of technology, design and emotions. No other motorcycle better embodies this concept and the vision inspiring it.",
     src: "dragster800rr2021/design.png",
+    inf: [
+      {
+        title: "EMOTIONS WITHOUT COMPROMISE",
+        content:
+          "The design of the Dragster RR takes no prisoners. Compact, aggressive, and stunningly beautiful. Emotion in its purest form.",
+        mediumImg: "./img/dragster800rr2021/dragster-rr-popup-1.png",
+        largeImg: "./img/dragster800rr2021/dragster-rr-popup-xl-1.png",
+      },
+      {
+        title: "CHARACTER LIKE NO OTHER",
+        content:
+          "The front fender’s side supports and the tank damper are made of aluminium, while the full-LED headlight has a cornering function and is covered over by the small but effective flyscreen with a redesigned profile.",
+        mediumImg: "./img/dragster800rr2021/dragster-rr-popup-2.png",
+        largeImg: "./img/dragster800rr2021/dragster-rr-popup-xl-2.png",
+      },
+    ],
   },
   engineInf: {
     title: {

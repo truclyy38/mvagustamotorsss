@@ -133,6 +133,11 @@
     height: 230vh;
   }
 }
+@media screen and (max-width: 675px) {
+  .mtProperties-Picture{
+    height: 100vh;
+  }
+}
 @media screen and (max-width: 600px) {
   .mtProperties-layout{
     margin-top: 10px;

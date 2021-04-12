@@ -63,6 +63,22 @@ const brutale800rr_infor = {
     p:
       "Designed for top performance, with improvements to the chassis, electronics and engine. A dual seat with a new improved-comfort design and a simple, lightweight sub-frame represent the latest technical innovations, for an even better riding experience. Not to mention a design that has always refused to compromise.",
     src: "brutale800rr/design.jpg",
+    inf: [
+      {
+        title: "It’s an RR!",
+        content:
+          "Full-LED lights, balanced and original forms, and compact dimensions inspired by the ergonomics required for sporting use without sacrificing comfort: these are just some of the traits that make the Brutale RR so unique.",
+        mediumImg: "./img/brutale800rr/brutale-rr-popup-1.png",
+        largeImg: "./img/brutale800rr/brutale-rr-popup-xl-1.png",
+      },
+      {
+        title: "BE IN CONTROL",
+        content:
+          "The new 5.5” TFT instrumentation provides staggering quantities of information, extensive connectivity and a variety of options for customisation. What’s more, with the MV Ride App it can act as a navigator, accompanying every journey turn by turn.",
+        mediumImg: "./img/brutale800rr/brutale-rr-popup-2.png",
+        largeImg: "./img/brutale800rr/brutale-rr-popup-xl-2.png",
+      },
+    ],
   },
   engineInf: {
     title: {

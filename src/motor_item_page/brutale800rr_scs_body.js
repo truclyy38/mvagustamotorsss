@@ -63,6 +63,22 @@ const brutale800rrscs_infor = {
     p:
       "The design draws on tight lines and volumes that are perfectly integrated between the front and rear end. A design of extraordinary balance that’s always been the hallmark of the Brutale. The engine is nested in the traditional steel lattice chassis, complete with aluminium side plates, redesigned to further enhance driving experience.",
     src: "brutale800rrscs/design.jpg",
+    inf: [
+      {
+        title: "Continuous evolution",
+        content:
+          "The advanced SCS (Smart Clutch System), exclusive to MV Agusta, has proven to be the perfect combination of effectiveness, speed of action, and the excitement of driving. With the complete comfort that only this system is able to guarantee.",
+        mediumImg: "./img/brutale800rrscs/brutale-rr-scs-popup-1.png",
+        largeImg: "./img/brutale800rrscs/brutale-rr-scs-popup-xl-1.png",
+      },
+      {
+        title: "Breaking new ground",
+        content:
+          "Innovating means having the courage to take a new route. Like, for example, bringing the SCS system to a high-performance sports naked bike. The instinct of the MV Agusta engineers paid off, thanks in part to the integration of the advanced LC launch control system.",
+        mediumImg: "./img/brutale800rrscs/brutale-rr-scs-popup-2.png",
+        largeImg: "./img/brutale800rrscs/brutale-rr-scs-popup-xl-2.png",
+      },
+    ],
   },
   engineInf: {
     title: {

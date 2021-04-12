@@ -62,6 +62,22 @@ const rush1000infor = {
     p:
       "The design choices highlight the uniqueness of the idea behind the Rush, a bike meant for those who are not afraid to stand-out of the crowd with out-of-the-ordinary details, such as she lenticular rear-wheel, typical of acceleration races.",
     src: "rush1000/design.jpg",
+    inf: [
+      {
+        title: "Stunning from head to tail",
+        content:
+          "There are many details that characterise the Rush: from the light clusters, both specially designed, to the rear frame and the passenger seat, created for this model. The headlight is the evolution of that of the famous RVS #1. Another distinctive element is the design of the two tailpipes, which characterises the rear axle.",
+        mediumImg: "./img/rush1000/rush-1000-popup-1.png",
+        largeImg: "./img/rush1000/rush-1000-popup-xl-1.png",
+      },
+      {
+        title: "Over 300 KM / H",
+        content:
+          "With a top speed of over 300 km/h, the Rush 1000 imposes its pace also thanks to the impressive performance of a replica MotoGP. Thanks to its “launch control” system and traction control, it takes no prisoners when it comes to acceleration, its true talent, and can stand up to the meanest superbikes.",
+        mediumImg: "./img/rush1000/rush-1000-popup-2.png",
+        largeImg: "./img/rush1000/rush-1000-popup-xl-2.png",
+      },
+    ],
   },
   engineInf: {
     title: {
