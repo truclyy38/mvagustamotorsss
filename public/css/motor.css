@@ -6,7 +6,7 @@
   background-position: bottom;
   background-size: auto 100%;
 }
-.xxxxx{
+.xxxxx {
   animation: 1s fades;
 }
 .motorPageHeader {
@@ -16,6 +16,12 @@
   background-position: left;
   background-repeat: no-repeat;
   min-height: 750px;
+  user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .motorPageHeader-Content {
   position: absolute;
@@ -32,7 +38,7 @@
   background-repeat: no-repeat;
   /* background-size: auto 18%; */
   margin-bottom: 10px;
-  animation: fades .75s ease;
+  animation: fades 1.5s ease;
 }
 .motorPageHeader-Content-center {
   width: 100%;
@@ -46,6 +52,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 }
 .motorPageHeader-manifesto {
   width: 100%;
@@ -55,7 +62,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  animation: fades .5s ease-in-out;
+  /* animation: fades .5s ease-in-out; */
 }
 .motorPageHeader-manifesto p {
   font-family: "Anton", sans-serif;
@@ -72,7 +79,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fades .75s ease;
+  animation: fades 0.75s ease;
 }
 .motorPageHeader-Content-center-bottom p {
   width: 60%;
@@ -87,7 +94,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fades .75s ease;
+  animation: fades 0.75s ease;
 }
 .motorPageHeader-Content-bottom p {
   text-align: center;
@@ -146,7 +153,7 @@
 .model3d__show {
   opacity: 1 !important;
 }
-.model3d *{
+.model3d * {
   animation: none;
 }
 .dr-container-3ds {
@@ -408,6 +415,15 @@
   height: 82vh;
 }
 /* ------------------------ */
+@media screen and (max-width: 1200px) {
+  .motorPageHeader{
+    height: 120vh;
+  }
+  .xxxxx {
+    height: 100vh !important;
+    transform: translateX(-10%);
+  }
+}
 
 @media screen and (max-width: 1145px) {
   .model3d-body-tech-right {
@@ -453,17 +469,18 @@
   .dr-container {
     height: 80vw;
   }
-}
-@media screen and (max-width: 980px) {
   .motorPageHeader-Content {
     width: 100%;
   }
-}
-@media screen and (max-width: 950px) {
-  .model3d-button {
-    top: 28%;
-    width: 235px;
-    height: 50px;
+  .motorPageHeader-Content-top{
+    height: 15% !important;
+  }
+  .motorPageHeader-Content-center-top p{
+    font-size: 400%;
+  }
+  .motorPageHeader-manifesto{
+    width: auto;
+    margin-left: 5px;
   }
 }
 @media screen and (max-width: 905px) {
@@ -513,9 +530,6 @@
   .dr-container {
     height: 92vh;
   }
-  .xxxxx {
-    height: 100vh !important;
-  }
 }
 @media screen and (max-width: 750px) {
   .model3d-body-tech {
@@ -555,9 +569,9 @@
     transform: translateY(-60%) scale(1.1);
   }
 }
-@media screen and (max-width: 635px) {
-  .motorPageHeader-Content {
-    width: 100%;
+@media screen and (max-width: 675px) {
+  .motorPageHeader-Content-center-top p{
+    font-size: 300%;
   }
 }
 

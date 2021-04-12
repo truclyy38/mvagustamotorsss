@@ -1,13 +1,14 @@
 import React from "react";
-import Motor3d from "../generalLayout/motor3d";
+import Motor3d from "../generalLayout/motorPage/model3d/motor3d";
 import PageName from "../generalLayout/pageName";
-import MotorPageHeader from "../generalLayout/motorPageHeader";
+import MotorPageHeader from "../generalLayout/motorPage/motorHeader/motorPageHeader";
 import Nav from "../generalLayout/nav";
 import NavDesktop from "../generalLayout/navDesk";
-import MotorProperties from "../generalLayout/motorProperties";
-import DesignTips from "../generalLayout/designTips";
-import MvEngineMotor from "../generalLayout/mvEngineMotor";
-import MotorItem from "../generalLayout/motorItems";
+import MotorProperties from "../generalLayout/motorPage/motorProperties/motorProperties";
+import DesignTips from "../generalLayout/motorPage/designTips/designTips";
+import MvEngineMotor from "../generalLayout/motorPage/motorEngine/mvEngineMotor";
+import MotorItem from "../generalLayout/motorPage/motorItems/motorItems";
+import OrderLayout from "../generalLayout/motorPage/orderLayout/orderLayout";
 
 const heroGradientStart = "#363531";
 const heroGradientEnd = "#161514";
@@ -17,7 +18,8 @@ const brutale1000rr_infor = {
   header: {
     price: "31.500",
     nameHeaderTitle: "brutale1000rr/brutale-1000-rr.svg",
-    bgHeaderParallax: "brutale1000rr/brutale-1000-rr-xl.webp",
+    bgHeaderParallax_Large: "brutale1000rr/brutale-1000-rr-xl.png",
+    bgHeaderParallax_Small: "brutale1000rr/brutale-1000-rr-m.png",
     manifesto_Arr: ["THE", "ALL-OUT", "HYPER", "NAKED"],
     colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 100%)`,
     contentHeaderContent:
@@ -62,6 +64,22 @@ const brutale1000rr_infor = {
     p:
       "The design draws on tight lines and volumes that are perfectly integrated between the front and rear end. This exquisite balance, a distinctive trait of the four-cylinder Brutale since the first iconic model that marked the relaunch of the Italian brand along with the F4, is now back with the new 1000 RR.",
     src: "brutale1000rr/design.png",
+    inf: [
+      {
+        title: "Details",
+        content:
+          "Attention to detail is revealed by the aerodynamic wings positioned beside the radiators to improve downforce and add load to the front end, limiting lift at high speed. The effect can be clearly felt over 200km/h.",
+        mediumImg: "./img/brutale1000rr/brutale-1000-rr-popup-1.png",
+        largeImg: "./img/brutale1000rr/brutale-1000-rr-popup-xl-1.png",
+      },
+      {
+        title: "Explosive 208 hp, yet manageable",
+        content:
+          "A top speed of over 300 km/h and record-breaking acceleration. The new Brutale 1000 RR was designed to get the best out of chassis, engine and electronics, with minimum effort from the rider, taking into account the exceptional performance levels of this hyper-naked.",
+        mediumImg: "./img/brutale1000rr/brutale-1000-rr-popup-2.png",
+        largeImg: "./img/brutale1000rr/brutale-1000-rr-popup-xl-2.png",
+      },
+    ],
   },
   engineInf: {
     title: {
@@ -83,7 +101,7 @@ const brutale1000rr_infor = {
         small: "rush1000/items/electronics-s.jpg",
       },
       description:
-        "The Brutale 1000 RR features a full ride-by-wire multi map system with IMU inertial platform, which manages traction control with slip strategies (8 different settings and the option to deactivate it). Also featuring a Front Lift Control system with active and non-active options, it gives the rider entire freedom of action. The Brutale 1000 RR is equipped with a second generation TFT dashboard ",
+        "The Brutale 1000 RR features a full ride-by-wire multi map system with IMU inertial platform, which manages traction control with slip strategies (8 different settings and the option to deactivate it). Also featuring a Front Lift Control system with active and non-active options, it gives the rider entire freedom of action. The Brutale 1000 RR is equipped with a second generation TFT dashboard.",
     },
     {
       name: "Technology",
@@ -113,10 +131,6 @@ const brutale1000rr_infor = {
 };
 
 export default function BodyBrutale1000RR() {
-  // window.addEventListener("scroll", () => {
-  //   ScrollNavFunction();
-  //   NavWhiteCompact();
-  // });
   return (
     <>
       <NavDesktop />
@@ -128,6 +142,7 @@ export default function BodyBrutale1000RR() {
       <DesignTips designTips={brutale1000rr_infor.designTips} />
       <MvEngineMotor engineInf={brutale1000rr_infor.engineInf} />
       <MotorItem advantages={brutale1000rr_infor.advantages} />
+      <OrderLayout modelName={brutale1000rr_infor.namePage} price={brutale1000rr_infor.header.price} />
     </>
   );
 }

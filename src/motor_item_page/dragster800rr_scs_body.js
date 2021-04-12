@@ -1,12 +1,13 @@
 import React from "react";
-import DesignTips from "../generalLayout/designTips";
-import Motor3d from "../generalLayout/motor3d";
-import MotorItem from "../generalLayout/motorItems";
-import MotorPageHeader from "../generalLayout/motorPageHeader";
-import MotorProperties from "../generalLayout/motorProperties";
-import MvEngineMotor from "../generalLayout/mvEngineMotor";
+import DesignTips from "../generalLayout/motorPage/designTips/designTips";
+import Motor3d from "../generalLayout/motorPage/model3d/motor3d";
+import MotorItem from "../generalLayout/motorPage/motorItems/motorItems";
+import MotorPageHeader from "../generalLayout/motorPage/motorHeader/motorPageHeader";
+import MotorProperties from "../generalLayout/motorPage/motorProperties/motorProperties";
+import MvEngineMotor from "../generalLayout/motorPage/motorEngine/mvEngineMotor";
 import Nav from "../generalLayout/nav";
 import NavDesktop from "../generalLayout/navDesk";
+import OrderLayout from "../generalLayout/motorPage/orderLayout/orderLayout";
 import PageName from "../generalLayout/pageName";
 
 const heroGradientStart = "#777777";
@@ -17,7 +18,8 @@ const dragster800rr_scs_infor = {
   header: {
     price: "20.000",
     nameHeaderTitle: "dragster800rrscs/dragster-rr-scs.svg",
-    bgHeaderParallax: "dragster800rrscs/dragster-rr-scs-xl.png",
+    bgHeaderParallax_Large: "dragster800rrscs/dragster-rr-scs-xl.png",
+    bgHeaderParallax_Small: "dragster800rrscs/dragster-rr-scs-m.png",
     manifesto_Arr: ["THE", "SMART", "REBEL"],
     colorBg: `linear-gradient(90deg,${heroGradientStart} 0%,${heroGradientEnd} 100%)`,
     contentHeaderContent:
@@ -62,6 +64,22 @@ const dragster800rr_scs_infor = {
     p:
       "Inimitable, with a unique personality. The curves of the fuel tank and headlight, the bobbed tail and the elegant spoke wheels superbly frame the three-cylinder engine at the heart of the Dragster. Ready for action, bursting with exuberance and power.",
     src: "dragster800rrscs/design.png",
+    inf: [
+      {
+        title: "Less is more",
+        content:
+          "For those who like to be noticed, without a hint of arrogance. An extra incentive comes from the advanced Smart Clutch System and the new up & down quick shift, meaning you can forget the clutch, even when stopping and starting, and concentrate solely on the pleasure of riding.",
+        mediumImg: "./img/dragster800rrscs/dragster-rr-scs-popup-1.png",
+        largeImg: "./img/dragster800rrscs/dragster-rr-scs-popup-xl-1.png",
+      },
+      {
+        title: "Hold tight",
+        content:
+          "A bike like no other, with impressive performance. The Dragster RR SCS loves to show off with striking acceleration, boosted by the advanced Smart Clutch System, allowing it to pick up speed better than traditional-clutch bikes.",
+        mediumImg: "./img/dragster800rrscs/dragster-rr-scs-popup-2.png",
+        largeImg: "./img/dragster800rrscs/dragster-rr-scs-popup-xl-2.png",
+      },
+    ],
   },
   engineInf: {
     title: {
@@ -112,10 +130,6 @@ const dragster800rr_scs_infor = {
   ],
 };
 export default function Dragster800RR_SCS() {
-  // window.addEventListener("scroll", () => {
-  //   ScrollNavFunction();
-  //   NavWhiteCompact();
-  // });
   return (
     <>
       <NavDesktop />
@@ -127,6 +141,10 @@ export default function Dragster800RR_SCS() {
       <DesignTips designTips={dragster800rr_scs_infor.designTips} />
       <MvEngineMotor engineInf={dragster800rr_scs_infor.engineInf} />
       <MotorItem advantages={dragster800rr_scs_infor.advantages} />
+      <OrderLayout
+        modelName={dragster800rr_scs_infor.namePage}
+        price={dragster800rr_scs_infor.header.price}
+      />
     </>
   );
 }
