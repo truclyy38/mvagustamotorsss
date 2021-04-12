@@ -496,7 +496,7 @@ label>a:active{
 @media screen and ( max-width: 414px){
     .inputText:focus~label, .inputText:valid~label{
         font-size: 8px;
-        top:8%
+        top: 8%;
     }
 
     .inputText~label{
