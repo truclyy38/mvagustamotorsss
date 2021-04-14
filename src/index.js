@@ -21,11 +21,15 @@ import {Container} from "./certificate/mv-certificate";
 import WarrantyLayout from "./warranty/warrantyLayout";
 import {NewsMV} from './news/newMV';
 import BuyYourMvLayout from "./buyYourMV/buyYourMvLayout"
+
+import BespokeLayout from './bespoke/bespokeLayout'
+
 import F3_800_Body from "./motor_item_page/f3_800_body";
 import Brutale800RRBody from "./motor_item_page/brutale800rr_body";
 import Brutale800RR_SCS_Body from "./motor_item_page/brutale800rr_scs_body";
 import Reveal2021Page from "./reveal2021/reveal2021_body";
 import { HistoryPage } from "./generalLayout/slideScrollHorizontal/historyPage";
+
 
 function Index() {
   window.addEventListener("scroll", () => {
@@ -60,6 +64,9 @@ function Index() {
           <Route path="/warranty" component={WarrantyLayout} />
           <Route path="/news" component = {NewsMV}/>
           <Route path="/buy-your-mv" component={BuyYourMvLayout} />
+
+          <Route path="/monaco-design-studio" component={BespokeLayout} />
+
           <Route path="/reveal-events" component={Reveal2021Page} />
           <Route path="/history" component={HistoryPage} />
           {/* <Route

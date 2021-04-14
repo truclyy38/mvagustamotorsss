@@ -28,10 +28,12 @@ strong {
   font-family: "Anton", sans-serif;
 }
 
+
 .nav-pc-homepage {
   height: calc(100vw * 0.563);
   max-height: 1023px;
   z-index: -1;
+
 }
 
 .area-contents {

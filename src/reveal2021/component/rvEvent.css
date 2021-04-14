@@ -112,11 +112,13 @@
 }
 .fg-cb {
   margin-top: 15px !important;
+  display: flex;
+  align-items: center;
 }
 .form-group > span {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
   margin-left: 10px;
   font-size: 18px;
   font-family: sans-serif;
@@ -152,7 +154,7 @@
   padding: 15px 0;
   display: block;
   position: relative;
-  font-family: 'anton';
+  font-family: "anton";
   letter-spacing: 1px;
   font-size: 22px;
 }
@@ -177,8 +179,8 @@
   .up-re-content p {
     margin-top: 175px;
   }
-  .upcoming-reveal-lt img{
-      min-height: 850px;
+  .upcoming-reveal-lt img {
+    min-height: 850px;
   }
 }
 @media screen and (max-width: 785px) {
@@ -204,12 +206,12 @@
     margin-top: 125px;
     font-size: 4.25rem;
   }
-  .su-ts-lout form{
-      padding: 0 6%;
+  .su-ts-lout form {
+    padding: 0 6%;
   }
   .su-ts-lout input[type="checkbox"] {
-      width: 25px;
-      height: 25px;
+    width: 25px;
+    height: 25px;
   }
 }
 @media screen and (max-width: 565px) {
@@ -223,11 +225,11 @@
   .up-re-content span {
     font-size: 20px;
   }
-  .su-ts-lout form{
-      padding: 0 3%;
+  .su-ts-lout form {
+    padding: 0 3%;
   }
   .su-ts-lout .form-group.submit-re-bt button span {
     padding: 12px 0;
     font-size: 22px;
-}
+  }
 }

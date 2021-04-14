@@ -56,12 +56,14 @@ export const SignUpToStayForm = () =>{
                 I agree to the <a href>Privacy Notice</a> *
               </span>
             </div>
-            <div className="form-group">
+            <div className="form-group fg-cb">
               <input type="checkbox" name="accept-prMarketing" required></input>
               <span>I agree to the Processing for marketing purpose</span>
             </div>
             <div className="form-group submit-re-bt">
-              <button type="submit"><span>SUBMIT</span></button>
+              <button type="submit">
+                <span>SUBMIT</span>
+              </button>
             </div>
           </form>
         </div>
