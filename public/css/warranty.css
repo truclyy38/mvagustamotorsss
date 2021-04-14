@@ -1,11 +1,18 @@
+
 .wr-hd-contain{
-    position: relative;
-    top: 0px;
-    left:0;
+    background-color: lightblue;
     width: 100vw;
-    height: 120vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:0;
 }
-.wr-header-content{
+
+.wr-hd-background img{
+    width:100%;
+}
+
+/* .wr-header-content{
    position: absolute;
     background-image: url("../img/warranty/banner-bg-l.jpg");
     background-repeat: no-repeat;
@@ -16,17 +23,23 @@
     justify-content: center;
     display:flex;
     width: 100%;
-}
+} */
 
-.wr-header-title{
-   padding-top: 12%;
+.wr-hd-title{
+  position: absolute;
+  top:21vh;
+  left: 35vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
     font-family: 'Anton';
     color: white;
-    letter-spacing: 0.8%;
+    letter-spacing: 0.586%;
     text-transform: uppercase;
-    font-weight: 550;
-    font-size: 500%;
-    line-height: 0.95;
+    font-weight: 0;
+    font-size: 580%;
+    line-height: 0.9;
 }
 /* ........................................................... */
 .wr-body-content{
@@ -51,12 +64,7 @@
     margin-top: 60px;
     padding:  0% 5%;
     align-items: center;
- main
-    border-right: 1px solid #b3adad;
-    
-
     border-right: 1px solid #131415;
- main
 }
 .wr-content:last-child{
     border:none ;
@@ -77,19 +85,16 @@
     line-height: 1.1;
 }
 @media all and (max-width: 1200px){
-    .wr-header-content{
-        height: 85%;
+    .wr-hd-title{
+       top:25vh;
+       font-size: 500%;
     }
 }
 
-@media all and (max-width: 986px){
-    .wr-hd-contain{
-        height: 240vh;
-    }
-    .wr-header-content{
-        background-image: url("../img/warranty/banner-bg-m.jpg");
-        height: 85%;
-        font-size: 0.9em;
+@media all and (max-width: 984px){
+    .wr-hd-title{
+        top:20vh;
+        left:32vw;
     }
  /*  */
  .wr-body-content{
@@ -114,29 +119,47 @@
     border: none;
 }
 
+
+}
+@media all and (max-width: 784px){
+    .wr-hd-contain{
+        height: 220vh;
+    }
+
+    .wr-hd-background img{
+        width: 110%;
+        height: 100%;
+    }
+    .wr-hd-title{
+        top:12%;
+        font-size: 450%;
+    }
 }
 @media all and (max-width: 700px){
-    .wr-hd-contain{
-        height: 150vh;
-    }
-    .wr-header-content{
-        /* background-position-x: -100; */
-        height: 100%;
-         font-size: 0.7em; 
-        background-size: cover; 
+
+    .wr-hd-title{
+        font-size: 400%;
     }
     .wr-content-contain{
         width: 100%;
     }
-    .wr-header-title{
-        padding-top: 20%;
-     }
     .wr-body-content{
         max-height: 170vh;
         height:130vh;  
         margin-top: 10%;  
     }
     /*  */
+}
+
+@media all and (max-width: 547px){
+    .wr-hd-contain{
+        height: auto;
+    }
+    .wr-hd-title{
+        top:10%;
+        left:27%;
+        font-size: 350%;
+    }
 }
 
 
