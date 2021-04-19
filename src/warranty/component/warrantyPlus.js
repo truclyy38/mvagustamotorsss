@@ -3,8 +3,7 @@ import {warrantyData} from './warrantyData';
 
 export function WarrantyBody(){
     return(
-        <div className="wr-body-content">
-            <div className="wr-content-contain">
+        <div className="wr-body-contain">
             {warrantyData.map((item,index) => {
             return(
                 <div className="wr-content">
@@ -14,7 +13,6 @@ export function WarrantyBody(){
             );
         })
         }
-            </div>
         </div>
     );
 } 

@@ -1,6 +1,5 @@
 
 .wr-hd-contain{
-    background-color: lightblue;
     width: 100vw;
     justify-content: center;
     align-items: center;
@@ -11,19 +10,6 @@
 .wr-hd-background img{
     width:100%;
 }
-
-/* .wr-header-content{
-   position: absolute;
-    background-image: url("../img/warranty/banner-bg-l.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    object-fit:fill;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    display:flex;
-    width: 100%;
-} */
 
 .wr-hd-title{
   position: absolute;
@@ -42,22 +28,19 @@
     line-height: 0.9;
 }
 /* ........................................................... */
-.wr-body-content{
+.wr-body-contain{
     position: relative;
     top:0;
     width: 100vw;
-    height:90vh;
-    max-height: 520px;
-    background-color: #f1f1f1;
-}
-.wr-content-contain{
-    height: 100%;
-    position: absolute;
     display: flex;
     justify-content: center;
     flex-direction: row;
     text-align: left;
+    max-height: 520px;
+    background-color: #f1f1f1;
+    padding: 50px 0;
 }
+
 .wr-content{
     width: 33.33%;
     height: 70%;
@@ -96,40 +79,25 @@
         top:20vh;
         left:32vw;
     }
- /*  */
- .wr-body-content{
+ 
+ .wr-body-contain{
     max-height: 200vh;
-    height:150vh;
-     width: 100%;
+     width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
-     margin-top: -12%;
-
-}
- .wr-content-contain{
-    width: 70%;
-    flex-direction: column;
+     flex-direction: column;
     justify-content: flex-start;
 }
+
 .wr-content{
     width: 100%;
     height: 250%;
     align-items: center;
     border: none;
 }
-
-
 }
 @media all and (max-width: 784px){
-    .wr-hd-contain{
-        height: 220vh;
-    }
-
-    .wr-hd-background img{
-        width: 110%;
-        height: 100%;
-    }
     .wr-hd-title{
         top:12%;
         font-size: 450%;
@@ -140,21 +108,13 @@
     .wr-hd-title{
         font-size: 400%;
     }
-    .wr-content-contain{
-        width: 100%;
+    .wr-body-contain{
+        min-width: 90%;
+        max-height: 170vh; 
     }
-    .wr-body-content{
-        max-height: 170vh;
-        height:130vh;  
-        margin-top: 10%;  
-    }
-    /*  */
 }
 
 @media all and (max-width: 547px){
-    .wr-hd-contain{
-        height: auto;
-    }
     .wr-hd-title{
         top:10%;
         left:27%;
